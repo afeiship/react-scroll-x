@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+button {
+  border: none;
+  background: no-clip;
+  &:focus {
+    outline: none;
+  }
+}
+
+@import "./components/style.scss";
+
+.hello-react-scroll-x {
+  color: #f00;
+  padding: 50px 20px;
+
+  .react-scroll-x {
+    border: 1px solid red;
+    position: relative;
+    .scroller {
+      border: 1px solid #000;
+      .item {
+        border: 1px solid #00f;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-right: 10px;
+        img {
+          vertical-align: middle;
+        }
+      }
+    }
+
+    .extra {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      width: 60px;
+      background: #333;
+      line-height: 1.2;
+      color: #fff;
+    }
+  }
+  .button {
+    border: none;
+    display: block;
+    width: 100%;
+    padding-left: 14px;
+    padding-right: 14px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    overflow: visible;
+    height: 42px;
+    border-radius: 5px;
+    color: #ffffff;
+    line-height: 42px;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    background: #04be02;
+    margin-bottom: 15px;
+    &:active {
+      background: #3cc51f;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
